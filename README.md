@@ -1,7 +1,5 @@
-_Check out https://github.com/benalavi/buildpack-packages which is a more
-up-to-date way to install `s3cmd` (and other simple binary packages) on Heroku._
-
-Heroku buildpack that installs s3cmd.
+Heroku buildpack that installs s3cmd. Cloned from https://github.com/benalavi/buildpack-s3cmd,
+and updated to include a newer version of s3cmd.
 
 Installation
 ============
@@ -18,7 +16,7 @@ heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-mult
 And add this to your `.buildpacks`, i.e.:
 
 ```
-https://github.com/benalavi/buildpack-s3cmd
+https://github.com/urbanbound/buildpack-s3cmd
 https://github.com/heroku/heroku-buildpack-ruby
 ```
 
@@ -42,12 +40,12 @@ cd /vagrant
 ruby test/buildpack_test.rb
 ```
 
-s3cmd-1.0.1 package
+s3cmd-1.6.1 package
 ---------------------
 
-The s3cmd-1.0.1 package this buildpack installs is available at
-https://s3.amazonaws.com/buildpack-s3cmd/s3cmd-1.0.1.tar.gz.
+The s3cmd-1.6.1 package this buildpack installs is available at
+https://s3.amazonaws.com/ub-buildpack-s3cmd/s3cmd-1.6.1.tar.gz.
 
 It is simply a repackaged version of the one available at
-http://sourceforge.net/projects/s3tools/files/s3cmd/1.0.1/ with only `s3cmd`
+http://sourceforge.net/projects/s3tools/files/s3cmd/1.6.1/ with only `s3cmd`
 and required `S3` folder included.
