@@ -20,6 +20,17 @@ https://github.com/urbanbound/buildpack-s3cmd
 https://github.com/heroku/heroku-buildpack-ruby
 ```
 
+Dependencies
+============
+This buildpack requires the `heroku/python` buildpack, and that it be configured to install the `python-dateutil` library.
+
+```
+cat python-dateutil==2.5.3 >> requirements.txt
+git add requirements.txt; git commit -m "Adding python-dateutil library to the list of python requirements"
+heroku buildpacks:add heroku/python
+git push heroku master
+```
+
 Usage
 =====
 
