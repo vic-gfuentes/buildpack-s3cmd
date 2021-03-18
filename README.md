@@ -25,7 +25,7 @@ Dependencies
 This buildpack requires the `heroku/python` buildpack, and that it be configured to install the `python-dateutil` library.
 
 ```
-cat python-dateutil==2.5.3 >> requirements.txt
+cat python-dateutil==2.8.1 >> requirements.txt
 git add requirements.txt; git commit -m "Adding python-dateutil library to the list of python requirements"
 heroku buildpacks:add heroku/python
 git push heroku master
@@ -51,12 +51,12 @@ cd /vagrant
 ruby test/buildpack_test.rb
 ```
 
-s3cmd-1.6.1 package
+s3cmd-2.1.0 package
 ---------------------
 
-The s3cmd-1.6.1 package this buildpack installs is available at
-https://s3.amazonaws.com/ub-buildpack-s3cmd/s3cmd-1.6.1.tar.gz.
+The s3cmd-2.1.0 package this buildpack installs is available at
+https://s3.amazonaws.com/ub-buildpack-s3cmd/s3cmd-2.1.0.tar.gz.
 
 It is simply a repackaged version of the one available at
-http://sourceforge.net/projects/s3tools/files/s3cmd/1.6.1/ with only `s3cmd`
+http://sourceforge.net/projects/s3tools/files/s3cmd/2.1.0/ with only `s3cmd`
 and required `S3` folder included.

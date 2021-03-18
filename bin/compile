@@ -2,7 +2,7 @@
 
 set -o pipefail
 
-VERSION="1.6.1"
+VERSION="2.1.0"
 BIN_DIR=$(dirname $0)
 ROOT_DIR=`cd $(dirname $0); cd ..; pwd`
 BUILD_DIR=$1
